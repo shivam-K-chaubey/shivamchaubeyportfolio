@@ -19,10 +19,10 @@ const ResumeSection = () => {
             </div>
             <div>
               <h3 className="text-lg font-bold text-foreground mb-1">General Resume</h3>
-              <p className="text-muted-foreground text-sm">Full-stack & software engineering</p>
+              <p className="text-muted-foreground text-sm">For Software Engineering roles</p>
             </div>
             <Button variant="hero" size="lg" asChild>
-              <a href="/Shivam_Kumar_Chaubey_General_CV.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/resume/general-cv.pdf" target="_blank" rel="noopener noreferrer">
                 <Download size={18} />
                 View Resume
               </a>
@@ -35,10 +35,10 @@ const ResumeSection = () => {
             </div>
             <div>
               <h3 className="text-lg font-bold text-foreground mb-1">AI / Specialized Resume</h3>
-              <p className="text-muted-foreground text-sm">AI & machine learning focus</p>
+              <p className="text-muted-foreground text-sm">For AI / ML roles</p>
             </div>
             <Button variant="hero" size="lg" asChild>
-              <a href="/Shivam_Specialized_CV.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/resume/ai-cv.pdf" target="_blank" rel="noopener noreferrer">
                 <Download size={18} />
                 View Resume
               </a>
