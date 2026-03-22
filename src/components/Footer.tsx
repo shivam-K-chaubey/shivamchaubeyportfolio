@@ -8,13 +8,13 @@ const Footer = () => {
           © {new Date().getFullYear()} Shivam Kumar Chaubey. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
+          <a href="https://github.com/shivam-K-chaubey" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
             <Github size={20} />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/shivamchaubey76/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
             <Linkedin size={20} />
           </a>
-          <a href="mailto:shivam@example.com" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
+          <a href="mailto:shivamchaubey765@gmail.com" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
             <Mail size={20} />
           </a>
         </div>
