@@ -1,14 +1,22 @@
-import { Award, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const certificates = [
   {
     title: "Master Generative AI & Generative AI Tools",
     org: "Udemy",
+    image: "/certificates/gen-ai-udemy.png",
     link: "https://drive.google.com/file/d/1-ZIVNwHuc60AbsIgrDoGYfGXo3LLilz6/view",
   },
   {
-    title: "Master in C: Basic to Beyond",
+    title: "Build Generative AI Apps with No-Code Tools",
+    org: "Udemy",
+    image: "/certificates/gen-ai-nocode.png",
+    link: "https://drive.google.com/file/d/1-ZIVNwHuc60AbsIgrDoGYfGXo3LLilz6/view",
+  },
+  {
+    title: "Mastering in C: Basic to Beyond",
     org: "CSE Pathshala",
+    image: "/certificates/c-programming.jpg",
     link: "https://drive.google.com/file/d/1T3rK2k-h9xyxIEHFxS6rpbNB7zYln2WW/view",
   },
 ];
@@ -24,7 +32,7 @@ const CertificatesSection = () => {
           Certifications that validate my skills and knowledge.
         </p>
 
-        <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {certificates.map((cert, i) => (
             <a
               key={cert.title}
@@ -34,14 +42,17 @@ const CertificatesSection = () => {
               className="glass-card overflow-hidden group hover:glow-border transition-all duration-500 opacity-0 animate-fade-up cursor-pointer"
               style={{ animationDelay: `${0.15 + i * 0.1}s` }}
             >
-              <div className="p-8 flex flex-col items-center text-center gap-4">
-                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <Award size={32} className="text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">{cert.title}</h3>
-                  <p className="text-sm text-muted-foreground">Issued by {cert.org}</p>
-                </div>
+              <div className="overflow-hidden">
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+              <div className="p-5 text-center">
+                <h3 className="font-semibold text-foreground mb-1 text-sm leading-snug">{cert.title}</h3>
+                <p className="text-xs text-muted-foreground mb-3">Issued by {cert.org}</p>
                 <span className="inline-flex items-center gap-1.5 text-xs text-primary font-medium">
                   <ExternalLink size={14} />
                   View Certificate

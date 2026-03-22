@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 import projectRecipe from "@/assets/project-recipe.jpg";
 import projectFlight from "@/assets/project-flight.jpg";
 import projectWeather from "@/assets/project-weather.jpg";
@@ -11,7 +11,6 @@ const projects = [
     image: projectRecipe,
     tags: ["Python", "APIs", "Streamlit"],
     github: "https://github.com/shivam-K-chaubey/Ai-recipe-generator",
-    demo: "",
   },
   {
     title: "Flight Search Automation",
@@ -19,7 +18,6 @@ const projects = [
     image: projectFlight,
     tags: ["Python", "REST APIs", "Automation"],
     github: "https://github.com/shivam-K-chaubey/flight-search",
-    demo: "",
   },
   {
     title: "Live Weather Data Visualization",
@@ -27,7 +25,6 @@ const projects = [
     image: projectWeather,
     tags: ["Python", "Pandas", "Matplotlib", "Seaborn"],
     github: "https://github.com/shivam-K-chaubey/live-weather-data-visualization",
-    demo: "",
   },
 ];
 
@@ -67,22 +64,12 @@ const ProjectsSection = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-3">
-                  <Button variant="hero" size="sm" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github size={16} />
-                      GitHub
-                    </a>
-                  </Button>
-                  {project.demo && (
-                    <Button variant="hero-outline" size="sm" asChild>
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink size={16} />
-                        Live Demo
-                      </a>
-                    </Button>
-                  )}
-                </div>
+                <Button variant="hero" size="sm" asChild>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <Github size={16} />
+                    GitHub
+                  </a>
+                </Button>
               </div>
             </div>
           ))}

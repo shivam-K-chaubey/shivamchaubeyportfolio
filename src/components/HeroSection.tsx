@@ -41,10 +41,12 @@ const HeroSection = () => {
           <Button
             variant="hero-outline"
             size="lg"
-            onClick={() => document.getElementById("resume")?.scrollIntoView({ behavior: "smooth" })}
+            asChild
           >
-            <ArrowDown size={18} />
-            Download Resume
+            <a href="/resume/general-cv.pdf" target="_blank" rel="noopener noreferrer">
+              <ArrowDown size={18} />
+              Download Resume
+            </a>
           </Button>
         </div>
       </div>
