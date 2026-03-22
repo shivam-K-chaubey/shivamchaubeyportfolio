@@ -12,8 +12,9 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <img 
-          src="/public/profileimg.png"
-          className="w-32 h-32 mx-auto rounded-full mb-6 border-4 border-primary shadow-lg"
+          src="/profileimg.png" 
+          alt="Shivam"
+          className="w-40 h-40 rounded-full mx-auto mb-6"
         />
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 text-sm text-muted-foreground mb-8">
