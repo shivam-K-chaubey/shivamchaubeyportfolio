@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Code2 } from "lucide-react";
+import profile from "../assets/profileimg.png";
 
 const HeroSection = () => {
   return (
@@ -12,7 +13,7 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <img 
-          src="/profileimg.png" 
+          src={profile}
           alt="Shivam"
           className="w-40 h-40 rounded-full mx-auto mb-6"
         />
