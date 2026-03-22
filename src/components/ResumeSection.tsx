@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download, FileText } from "lucide-react";
+import { Download, FileText, Brain } from "lucide-react";
 
 const ResumeSection = () => {
   return (
@@ -12,20 +12,38 @@ const ResumeSection = () => {
           Download my resume to learn more about my education, experience, and skills.
         </p>
 
-        <div className="glass-card max-w-lg mx-auto p-10 flex flex-col items-center gap-6">
-          <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center">
-            <FileText size={40} className="text-primary" />
+        <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div className="glass-card p-8 flex flex-col items-center gap-5">
+            <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
+              <FileText size={32} className="text-primary" />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-foreground mb-1">General Resume</h3>
+              <p className="text-muted-foreground text-sm">Full-stack & software engineering</p>
+            </div>
+            <Button variant="hero" size="lg" asChild>
+              <a href="/Shivam_Kumar_Chaubey_General_CV.pdf" target="_blank" rel="noopener noreferrer">
+                <Download size={18} />
+                View Resume
+              </a>
+            </Button>
           </div>
-          <div>
-            <h3 className="text-xl font-bold text-foreground mb-1">Shivam Kumar Chaubey</h3>
-            <p className="text-muted-foreground text-sm">BTech Computer Science — Resume</p>
+
+          <div className="glass-card p-8 flex flex-col items-center gap-5">
+            <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
+              <Brain size={32} className="text-primary" />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-foreground mb-1">AI / Specialized Resume</h3>
+              <p className="text-muted-foreground text-sm">AI & machine learning focus</p>
+            </div>
+            <Button variant="hero" size="lg" asChild>
+              <a href="/Shivam_Specialized_CV.pdf" target="_blank" rel="noopener noreferrer">
+                <Download size={18} />
+                View Resume
+              </a>
+            </Button>
           </div>
-          <Button variant="hero" size="lg" asChild>
-            <a href="#" download>
-              <Download size={18} />
-              Download Resume
-            </a>
-          </Button>
         </div>
       </div>
     </section>

@@ -3,40 +3,31 @@ import { ExternalLink, Github } from "lucide-react";
 import projectRecipe from "@/assets/project-recipe.jpg";
 import projectFlight from "@/assets/project-flight.jpg";
 import projectWeather from "@/assets/project-weather.jpg";
-import projectPowerbi from "@/assets/project-powerbi.jpg";
 
 const projects = [
   {
-    title: "Recipe Generator",
-    description: "A non-AI recipe generator application that helps users discover new recipes based on available ingredients, dietary preferences, and cuisine types.",
+    title: "AI Recipe Generator",
+    description: "A web application that generates recipes based on user input ingredients and dietary preferences using AI-powered suggestions.",
     image: projectRecipe,
-    tags: ["Java", "Spring Boot", "SQL"],
-    github: "#",
-    demo: "#",
+    tags: ["Python", "APIs", "Streamlit"],
+    github: "https://github.com/shivam-K-chaubey/Ai-recipe-generator",
+    demo: "",
   },
   {
-    title: "Flight Search Application",
-    description: "A comprehensive flight search platform enabling users to find, compare, and filter flights with real-time data and an intuitive interface.",
+    title: "Flight Search Automation",
+    description: "A system that searches for cheap flights and sends alerts when prices drop below a threshold using automated workflows.",
     image: projectFlight,
-    tags: ["Java", "REST API", "Spring Boot"],
-    github: "#",
-    demo: "#",
+    tags: ["Python", "REST APIs", "Automation"],
+    github: "https://github.com/shivam-K-chaubey/flight-search",
+    demo: "",
   },
   {
-    title: "Weather Data Visualization",
-    description: "An interactive dashboard that visualizes weather data with charts, graphs, and maps for meaningful climate insights.",
+    title: "Live Weather Data Visualization",
+    description: "An interactive dashboard that analyzes and visualizes real-time weather data for 50+ cities with charts and insights.",
     image: projectWeather,
-    tags: ["Python", "Data Analytics", "Visualization"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Power BI Dashboard – World Electricity Access",
-    description: "A Power BI dashboard analyzing global electricity access patterns across countries with interactive maps and KPI metrics.",
-    image: projectPowerbi,
-    tags: ["Power BI", "Data Analytics", "DAX"],
-    github: "#",
-    demo: "#",
+    tags: ["Python", "Pandas", "Matplotlib", "Seaborn"],
+    github: "https://github.com/shivam-K-chaubey/live-weather-data-visualization",
+    demo: "",
   },
 ];
 
@@ -51,7 +42,7 @@ const ProjectsSection = () => {
           A selection of projects I've built and contributed to.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {projects.map((project, i) => (
             <div
               key={project.title}
@@ -83,12 +74,14 @@ const ProjectsSection = () => {
                       GitHub
                     </a>
                   </Button>
-                  <Button variant="hero-outline" size="sm" asChild>
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink size={16} />
-                      Live Demo
-                    </a>
-                  </Button>
+                  {project.demo && (
+                    <Button variant="hero-outline" size="sm" asChild>
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink size={16} />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>

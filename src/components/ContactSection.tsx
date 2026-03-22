@@ -56,25 +56,25 @@ const ContactSection = () => {
           </form>
 
           <div className="flex flex-col justify-center gap-6">
-            <div className="glass-card p-5 flex items-center gap-4">
+            <a href="mailto:shivamchaubey765@gmail.com" className="glass-card p-5 flex items-center gap-4 hover:glow-border transition-all duration-300">
               <Mail className="text-primary" size={24} />
               <div>
                 <p className="text-sm text-muted-foreground">Email</p>
-                <p className="text-foreground font-medium">shivam@example.com</p>
+                <p className="text-foreground font-medium">shivamchaubey765@gmail.com</p>
               </div>
-            </div>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="glass-card p-5 flex items-center gap-4 hover:glow-border transition-all duration-300">
+            </a>
+            <a href="https://github.com/shivam-K-chaubey" target="_blank" rel="noopener noreferrer" className="glass-card p-5 flex items-center gap-4 hover:glow-border transition-all duration-300">
               <Github className="text-primary" size={24} />
               <div>
                 <p className="text-sm text-muted-foreground">GitHub</p>
-                <p className="text-foreground font-medium">github.com/shivamchaubey</p>
+                <p className="text-foreground font-medium">github.com/shivam-K-chaubey</p>
               </div>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="glass-card p-5 flex items-center gap-4 hover:glow-border transition-all duration-300">
+            <a href="https://www.linkedin.com/in/shivamchaubey76/" target="_blank" rel="noopener noreferrer" className="glass-card p-5 flex items-center gap-4 hover:glow-border transition-all duration-300">
               <Linkedin className="text-primary" size={24} />
               <div>
                 <p className="text-sm text-muted-foreground">LinkedIn</p>
-                <p className="text-foreground font-medium">linkedin.com/in/shivamchaubey</p>
+                <p className="text-foreground font-medium">linkedin.com/in/shivamchaubey76</p>
               </div>
             </a>
           </div>
